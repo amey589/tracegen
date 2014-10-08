@@ -1,0 +1,8 @@
+trace_converter.py
+Convert Microsoft research traces to fio compatible traces
+It assumes the input trace file to be converted is in following format:
+
+Timestamp,Hostname,DiskNumber,Type,Offset,Size,ResponseTime
+
+Run it as following :
+python trace_converter.py  -if "/home/ms-traces/MSR-Cambridge/proj_2.csv" -d "/dev/sdb" -of trace2
